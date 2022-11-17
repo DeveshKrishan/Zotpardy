@@ -16,7 +16,7 @@ export default function App() {
     )
 }
 
-
+  
 function NavBar() {
     return (
         <nav className="navbar--body">
