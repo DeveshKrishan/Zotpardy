@@ -3,7 +3,7 @@
     position: absolute;
     width: 391px;
     height: 65px;
-    left: 52%;
+    left: 55%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -21,7 +21,7 @@
     box-sizing: border-box;
 
     position: absolute;
-    width: 1443px;
+    width: 100%;
     height: 125px;
 
     background: #16286A;
@@ -31,10 +31,11 @@
 
 .container {
     box-sizing: border-box;
-
+    width: 100%;
     position: absolute;
-    width: 1443px;
-    height: 927px;
+    /* width: 1443px; */
+    height: 100%;
+    /* margin: 0; */
 
     background: #1F48AF;
     border: 1px solid #000000;
@@ -44,7 +45,7 @@
     box-sizing: border-box;
     bottom: 0;
     position: absolute;
-    width: 1443px;
+    width: 100%;
     height: 53px;
     display: flex;
 
@@ -60,7 +61,7 @@
 
     padding-left: 30px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
 }
 
 .github2 {
@@ -70,7 +71,8 @@
 
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 617px;
+    /* padding-left: 617px; */
+    left: 50%;
 }
 
 .github3 {
@@ -80,7 +82,8 @@
 
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 1207px;
+    /* padding-left: 1207px; */
+    left: 88%;
 }
 
 .devesh {
@@ -99,6 +102,7 @@
     padding-left: 93px;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 .andy {
@@ -114,9 +118,12 @@
 
     color: #FFFFFF;
 
-    padding-left: 674px;
+    /* padding-left: 674px; */
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
+    
+    left: 52%;
 }
 
 .will {
@@ -132,21 +139,23 @@
 
     color: #FFFFFF;
 
-    padding-left: 1262px;
+    /* padding-left: 1262px; */
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     
+    left: 90%;
 }
 
 .main {
     position: absolute;
-    width: 892px;
-    height: 506px;
+    width: 47%;
+    height: 52%;
 
     background: #16286A;
     border: 1px solid #0B0101;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    left: 275.5px;
+    left: 30%;
     top: 227px;
     
 }
@@ -155,8 +164,8 @@
     top: 22px;
     left: 64px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -167,8 +176,8 @@
     top: 22px;
     left: 344px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -179,8 +188,8 @@
     top: 22px;
     left: 624px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -191,8 +200,8 @@
     top: 187px;
     left: 64px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -203,8 +212,8 @@
     top: 187px;
     left: 344px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -215,8 +224,8 @@
     top: 187px;
     left: 624px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -227,8 +236,8 @@
     top: 352px;
     left: 64px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -239,8 +248,8 @@
     top: 352px;
     left: 344px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);
@@ -251,8 +260,8 @@
     top: 352px;
     left: 624px;
     position: absolute;
-    width: 215px;
-    height: 133px;
+    width: 24.2%;
+    height: 26.5%;
 
     background: #E9EB95;
     border: 3px solid rgba(0, 0, 0, 0.25);

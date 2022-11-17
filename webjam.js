@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import github from './Github Logo.png'
 import './webjam.css'
-
+import sound from './open.mp3'
+import rmp from './rmp_ibrahim_preview.png'
+import spotlight from './Spotlight.png'
+import v from './Vignette.png'
 
 export default function App() {
     return (
@@ -38,17 +41,51 @@ function BottomBar() {
 
 
 function Main() {
+    const handleClick = (image) => {
+        var audio = new Audio(sound)
+        audio.play()
+        togglePop()
+
+        if (pop) {
+            // console.log(1)
+            popUp(image)
+            // togglePop()
+        }
+
+    }
+    
+    const [pop, setPop] = useState(false)
+
+    const togglePop = () => {
+        setPop(!pop)
+    }
+
+    const popUp = (image) => {
+        return (
+        <div className="pop">
+            <img className='v' src={v}/>
+            <img className='light' src={spotlight}/>
+            <div className='background'>
+                <img className='rmp' src={image}/>
+            </div>
+            <button className="exit">Exit</button>
+        </div>
+        )
+    }
+
     return (
         <main className="main">
-            <button className="card1"></button>
-            <button className="card2"></button>
-            <button className="card3"></button>
-            <button className="card4"></button>
-            <button className="card5"></button>
-            <button className="card6"></button>
-            <button className="card7"></button>
-            <button className="card8"></button>
-            <button className="card9"></button>
+            <button className="card1" onClick={() => {handleClick({rmp})}}></button>
+            <button className="card2" onClick={() => {handleClick("card2")}}></button>
+            <button className="card3" onClick={() => {handleClick("card3")}}></button>
+            <button className="card4" onClick={() => {handleClick("card4")}}></button>
+            <button className="card5" onClick={() => {handleClick("card5")}}></button>
+            <button className="card6" onClick={() => {handleClick("card6")}}></button>
+            <button className="card7" onClick={() => {handleClick("card7")}}></button>
+            <button className="card8" onClick={() => {handleClick("card8")}}></button>
+            <button className="card9" onClick={() => {handleClick("card9")}}></button>
         </main>
     )
 }
+
+
