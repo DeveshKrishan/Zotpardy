@@ -5,6 +5,11 @@ import sound from './open.mp3'
 import rmp from './rmp_ibrahim_preview.png'
 import spotlight from './Spotlight.png'
 import v from './Vignette.png'
+import close from './close.mp3'
+import wongma from './wongma.png'
+import kahoot from './kahoot.mp3'
+import {motion} from "framer-motion"
+
 
 export default function App() {
     return (
@@ -16,8 +21,8 @@ export default function App() {
     )
 }
 
-  
-function NavBar() {
+
+export default function NavBar() {
     return (
         <nav className="navbar--body">
             <h1 className="navbar--zotpardy">Zotpardy</h1>
@@ -26,7 +31,7 @@ function NavBar() {
 }
 
 
-function BottomBar() {
+export default function BottomBar() {
     return (
         <footer className="bottom">
             <img src={github} className="github1"/>
@@ -39,51 +44,54 @@ function BottomBar() {
     )
 }
 
+var image;
 
 function Main() {
-    const handleClick = (image) => {
-        var audio = new Audio(sound)
-        audio.play()
+    const handleClick = (pic) => {
         togglePop()
-
-        if (pop) {
-            // console.log(1)
-            popUp(image)
-            // togglePop()
-        }
+        // image = pic
+        image = pic
 
     }
     
     const [pop, setPop] = useState(false)
+    // const [image, setImage] = useState("")
 
     const togglePop = () => {
         setPop(!pop)
-    }
-
-    const popUp = (image) => {
-        return (
-        <div className="pop">
-            <img className='v' src={v}/>
-            <img className='light' src={spotlight}/>
-            <div className='background'>
-                <img className='rmp' src={image}/>
-            </div>
-            <button className="exit">Exit</button>
-        </div>
-        )
+        if (pop) {
+            var audio = new Audio(sound)
+            audio.play()
+            
+        }
+        else {
+            var audio = new Audio(close)
+            audio.play()
+        }
     }
 
     return (
         <main className="main">
-            <button className="card1" onClick={() => {handleClick({rmp})}}></button>
-            <button className="card2" onClick={() => {handleClick("card2")}}></button>
-            <button className="card3" onClick={() => {handleClick("card3")}}></button>
-            <button className="card4" onClick={() => {handleClick("card4")}}></button>
-            <button className="card5" onClick={() => {handleClick("card5")}}></button>
-            <button className="card6" onClick={() => {handleClick("card6")}}></button>
-            <button className="card7" onClick={() => {handleClick("card7")}}></button>
-            <button className="card8" onClick={() => {handleClick("card8")}}></button>
-            <button className="card9" onClick={() => {handleClick("card9")}}></button>
+            <motion.button whileHover={{scale: 1.4}} className="card1" onClick={() => {handleClick(rmp)}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card2" onClick={() => {handleClick(wongma)}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card3" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card4" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card5" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card6" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card7" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card8" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.4}} className="card9" onClick={() => {handleClick()}}></motion.button>
+
+            {pop && (
+                <div className="pop">
+                <img className='v' src={v}></img>
+                <div className='background'>
+                    <img className='rmp' src={image}/>
+                    <img className='light' src={spotlight}/>
+                    <button className="exit" onClick={togglePop}>Exit</button>
+                </div>
+            </div>
+            )}
         </main>
     )
 }
