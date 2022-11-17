@@ -22,7 +22,7 @@ export default function App() {
 }
 
 
-export default function NavBar() {
+function NavBar() {
     return (
         <nav className="navbar--body">
             <h1 className="navbar--zotpardy">Zotpardy</h1>
@@ -31,7 +31,7 @@ export default function NavBar() {
 }
 
 
-export default function BottomBar() {
+function BottomBar() {
     return (
         <footer className="bottom">
             <img src={github} className="github1"/>

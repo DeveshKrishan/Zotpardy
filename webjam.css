@@ -3,7 +3,6 @@
     position: absolute;
     width: 391px;
     height: 65px;
-    left: 55%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -11,8 +10,8 @@
     line-height: 97px;
     display: flex;
     color: #E4E843;
-    text-align: center;
-    transform: translateX(-50%) translateY(-50%);
+    top: -45%;
+    left: 45%;
     padding-bottom: 43px;
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.45);
 }
@@ -304,6 +303,8 @@
     width: 90%;
     padding-left: 5%;
     padding-top: 5%;
+    
+    
 }
 
 .exit {
