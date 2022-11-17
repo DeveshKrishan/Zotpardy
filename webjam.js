@@ -9,6 +9,8 @@ import close from './close.mp3'
 import wongma from './wongma.png'
 import kahoot from './kahoot.mp3'
 import {motion} from "framer-motion"
+import zottie from './zottie_thottie.gif'
+import zotted from './bust_a_zot.gif'
 
 
 export default function App() {
@@ -72,16 +74,18 @@ function Main() {
 
     return (
         <main className="main">
-            <motion.button whileHover={{scale: 1.4}} className="card1" onClick={() => {handleClick(rmp)}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card2" onClick={() => {handleClick(wongma)}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card3" onClick={() => {handleClick()}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card4" onClick={() => {handleClick()}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card5" onClick={() => {handleClick()}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card6" onClick={() => {handleClick()}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card7" onClick={() => {handleClick()}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card8" onClick={() => {handleClick()}}></motion.button>
-            <motion.button whileHover={{scale: 1.4}} className="card9" onClick={() => {handleClick()}}></motion.button>
 
+            <motion.button whileHover={{scale: 1.25}} className="card1" onClick={() => {handleClick(rmp)}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card2" onClick={() => {handleClick(wongma)}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card3" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card4" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card5" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card6" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card7" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card8" onClick={() => {handleClick()}}></motion.button>
+            <motion.button whileHover={{scale: 1.25}} className="card9" onClick={() => {handleClick()}}></motion.button>
+            <div className="ad1"><img src={zottie} className="zottie"/></div>
+            <div className="ad2"><img src={zotted} className="bust"/></div>
             {pop && (
                 <div className="pop">
                 <img className='v' src={v}></img>
