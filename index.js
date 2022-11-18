@@ -4,47 +4,42 @@ import './index.css'
 import './share.js'
 import {NavBar, BottomBar} from './share.js'
 
-  function PlayButton(){
-    return <button className="home">Play</button>
-  }
+  function PlayButton(){ return <button className="home">Play</button>}
 
-  function AboutButton(){
-    return <button className="about">About</button>
-  }
+  function AboutButton(){ return <button className="about">About</button>}
 
-  function Highscores(){
-    return <button className="highScores">Highscores</button>
-  }
+  function Highscores(){return <button className="highScores">Leaderboard</button>}
 
-  function MainContent(){
-    return <div className="mainContent">
-
-    </div>
-  }
-
-  function ButtonsBackgrounds(){
+  function Main(){
     return(
         //React Fragment allows mutiples divs
-         <> 
-            <div className="playButtonBG"></div>
-            <PlayButton/>
-            <div className="aboutButtonBG"></div>
-            <AboutButton/>
-            <div className="highScoresBG"></div>
-            <Highscores/>
+        <> 
+        <NavBar/>
+        <div className="mainContent">
+         <div className="centerPlay">
+              <div className="playButtonBG">
+              <PlayButton/>
+              </div>
+            </div>
+            <div className="centerAbout">
+              <div className="aboutButtonBG">
+                  <AboutButton/>
+              </div>
+            </div>
+          
+            <div className="centerHigh">
+              <div className="highScoresBG">
+                <Highscores/>
+                </div>
+            </div>
+            <BottomBar/>
+          </div>
         </>
     )
   }
 
   export default function App() {
-    return (
-      <div >
-        <MainContent/>
-        <NavBar/>
-        <ButtonsBackgrounds/>
-        <BottomBar/>
-      </div>
-    );
+    return (<Main/>);
   }
 
   const root = ReactDOM.createRoot(document.getElementById('root'));
