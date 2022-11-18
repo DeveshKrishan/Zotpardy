@@ -1,0 +1,108 @@
+@import url("share.css");
+
+
+/* Background for the main content. */
+.mainContent{
+    background-color: #1F48AF;
+}
+
+.playButtonBG{
+    width: 85%;
+    height: 150px;
+    background: #16286A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.aboutButtonBG{
+    width: 85%;
+    height: 150px;
+    background: #16286A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.highScoresBG{
+    width: 85%;
+    height: 150px;
+    background: #16286A;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerPlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12%;
+
+}
+
+.centerAbout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;    
+    padding-top: 5%;
+}
+
+.centerHigh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;    
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+
+.home{
+    color: white;
+    background-color: transparent;
+    border: white 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    color: #E4E843;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.45);
+
+}
+
+.about{
+    color: white;
+    background-color: transparent;
+    border: white 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    color: #E4E843;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.45);
+
+
+}
+
+.highScores{
+    color: white;
+    background-color: transparent;
+    border: white 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    color: #E4E843;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.45);
+
+}
